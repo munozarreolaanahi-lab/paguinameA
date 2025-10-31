@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CETIS NO. 47 | Slider de Fotos</title>
+        <link rel="stylesheet" href="styles1.css">
+        </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="logocetis" alt="Logo Oficial CETIS No. 47">
+            </div>
+            <h1>SLIDER DE FOTOS | CETIS 47</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="pagina del cetis mejorada.html">INICIO</a></li>
+                <li><a href="oferta educativa.html">OFERTA EDUCATIVA</a></li>
+                <li><a href="actividades paraescolares.html">ACTIVIDADES PARAESCOLARES</a></li>
+                <li><a href="https://escolares.app/edu/">ESCOLARESMX</a></li>
+            </ul>
+            <form action="">
+                <input type="search" name="question" placeholder="Buscar en el sitio"/>
+                <input type="submit" value="¡Vamos!"/>
+            </form>
+        </nav>
+
+        <main>
+            <article>
+                <h2>Nuestros Mejores Momentos en Imágenes</h2>
+              <p>
+                 Descubre la vida en el CETIS No. 47 a través de nuestro carrousel de fotos. Capturamos la esencia de nuestra comunidad estudiantil, los logros académicos y las vibrantes actividades culturales y deportivas.
+               </p>
+               
+               <div class="slider-container">
+                   <div class="slider-image fade">
+                       <img src="honores"widtch="530" height="430" alt="Estudiantes en ceremonia">
+                       <div class="slider-caption"><h1>Ceremonia de Honores a la Bandera</h1></div>
+                   </div>
+
+                   <div class="slider-image fade">
+                       <img src="clubajedrez"widtch="530" height="430" alt="club escolar">
+                       <div class="slider-caption"><h1>Club de Ajedres</h1></div>
+                   </div>
+
+                   <div class="slider-image fade">
+                       <img src="robo"widtch="530" height="430" alt="club escolar">
+                       <div class="slider-caption"><h1>Club de Roborica</h1></div>
+                   </div>
+
+                   <div class="slider-image fade">
+                       <img src="danza"widtch="530" height="430" alt="Grupo de baile">
+                       <div class="slider-caption"><h1>Festival de Danza Folklórica</h1></div>
+                   </div>
+                    <div class="slider-image fade">
+                       <img src="boli"widtch="530" height="430" alt="club escolar">
+                       <div class="slider-caption"><h1>Club Deprtivo de Boli</h1></div>
+                   </div>
+                   <div class="slider-image fade">
+                       <img src="bandagerra"widtch="530" height="430" alt="club escolar">
+                       <div class="slider-caption"><h1>Club Civico Banda de Guerra</h1></div>
+                   </div>
+                   <div class="slider-image fade">
+                       <img src="volybol"widtch="530" height="430" alt="club escolar">
+                       <div class="slider-caption"><h1>Club Deportivo Volybol</h1></div>
+                   </div>
+                   </div>
+               <br>
+           <iframe width="330" height="158" src="https://www.youtube.com/embed/RmoebUXZysk?si=whfgkwx89sa-t4sh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <p class="gallery-note">
+                   Las imágenes reflejan la diversidad y el dinamismo de nuestro plantel.
+               </p>
+               </article>
+      <aside>
+        <h2>Enlaces de Interés</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1dKxocuZkj8nZ75DMGjFjUogVdxPwMUtv/view?usp=sharing">Reglamento Escolar</a></li>
+            <li><a href="https://www.facebook.com/PlantelC47">Página Oficial de FACEBOOK</a></li>
+            <li><a href="https://mexicogob.com/beca-benito-juarez-inicio-de-proceso-de-registro/">Información sobre BECAS BENITO JUÁREZ</a></li>
+            <br>
+            <img src="fotocetris"widtch="330" height="158"/>
+        </ul>
+      </aside>
+        </main>
+        <footer>
+            <p>&copy; Todos los derechos reservados 2025 | CETIS NO. 47 | DGETI</p>
+        </footer>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("slider-image");
+              // let dots = document.getElementsByClassName("dot"); // Descomentar si usas puntos
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              // for (i = 0; i < dots.length; i++) { // Descomentar si usas puntos
+              //   dots[i].className = dots[i].className.replace(" active", "");
+              // }
+              slides[slideIndex-1].style.display = "block";  
+              // dots[slideIndex-1].className += " active"; // Descomentar si usas puntos
+              setTimeout(showSlides, 4000); // Cambia de imagen cada 4 segundos
+            }
+
+            // Funciones para flechas (descomentar si las usas)
+            // function plusSlides(n) {
+            //     showSlidesManual(slideIndex += n);
+            // }
+            // function currentSlide(n) {
+            //     showSlidesManual(slideIndex = n);
+            // }
+            // function showSlidesManual(n) {
+            //   let i;
+            //   let slides = document.getElementsByClassName("slider-image");
+            //   let dots = document.getElementsByClassName("dot");
+            //   if (n > slides.length) {slideIndex = 1}    
+            //   if (n < 1) {slideIndex = slides.length}
+            //   for (i = 0; i < slides.length; i++) {
+            //     slides[i].style.display = "none";  
+            //   }
+            //   for (i = 0; i < dots.length; i++) {
+            //     dots[i].className = dots[i].className.replace(" active", "");
+            //   }
+            //   slides[slideIndex-1].style.display = "block";  
+            //   dots[slideIndex-1].className += " active";
+            // }
+
+        </script>
+    </body>
+</html>
